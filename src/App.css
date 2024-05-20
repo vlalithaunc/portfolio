@@ -1,38 +1,104 @@
-.App {
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #faf3f3; 
+}
+
+header {
+  background: #4e5e43; /* Soft lavender */
+  color: #fff;
+  padding: 1rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  margin: 0;
+  color: #fff; /* Keep header text white */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header p {
+  margin: 0.5rem 0 1rem;
+  color: #fff; /* Keep header text white */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff; /* Keep navigation links white */
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #faf3f3; /* Light background color */
+}
+
+h2 {
+  margin-top: 0;
+  color: #394531; /* Muted green for headings */
+}
+
+.project, .job {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #bfabc4; /* Soft lavender */
+  color: #394531; /* Dark grey text for content */
+}
+
+.project a, .contact a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #394531; 
+  text-decoration: none;
+  border: 1px solid #394531; 
+  padding: 0.5rem 1rem;
+}
+
+.project a:hover, .contact a:hover {
+  background: #6d8863; 
+  color: #fff; 
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%; }
+
+
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #4e5e43; 
+  color: #fff;
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
 }
