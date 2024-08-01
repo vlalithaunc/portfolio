@@ -14,7 +14,7 @@ export const darkTheme = {
 export const lightTheme = {
     bg: "#FFFFFF",          // Completely white background
     bgLight: "#E6E6F0",     // Light lavender with a hint of blue
-    primary: "#4E5180",     // Black for primary elements
+    primary: "#5F6F9F",     // Black for primary elements
     text_primary: "#000000", // Black for primary text
     text_secondary: "#4A4A4A", // Dark grey for secondary text
     card: "#F2F2F9",        // Light lavender for cards

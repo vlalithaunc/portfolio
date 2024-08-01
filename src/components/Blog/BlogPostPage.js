@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import Markdown from 'markdown-to-jsx';
+import search from './search.md'
+import knowledge from './knowledge.md'
+
 
 const blogPosts = [
-  { id: '1', title: 'First Post', content: 'This is the content of the first post.' },
-  { id: '2', title: 'Second Post', content: 'This is the content of the second post.' },
+  { id: '1', title: 'AI Overview', content: search },
+  { id: '2', title: 'Knowledge Representation', content: knowledge },
 ];
 
 const Container = styled.div`
@@ -55,9 +59,30 @@ const Content = styled.div`
   }
 `;
 
+
 const BlogPostPage = () => {
   const { id } = useParams();
+  const [content, setContent] = useState('');
   const post = blogPosts.find(post => post.id === id);
+
+  useEffect(() => {
+    if (post && post.content) {
+      fetch(post.content)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(data => setContent(data))
+        .catch(error => {
+          console.error('Error loading markdown file:', error);
+          setContent('Error loading content.');
+        });
+    } else if (post) {
+      setContent(post.content);
+    }
+  }, [post]);
 
   if (!post) {
     return (
@@ -73,7 +98,11 @@ const BlogPostPage = () => {
     <Container>
       <Wrapper>
         <Title>{post.title}</Title>
-        <Content>{post.content}</Content>
+        <Content>
+          <Markdown>
+            {content}
+          </Markdown>
+        </Content>
       </Wrapper>
     </Container>
   );

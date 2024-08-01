@@ -108,10 +108,7 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(250, 60%, 70%, 1); /* Bluish lavender */
-  background: linear-gradient(225deg, hsla(250, 60%, 70%, 1) 0%, hsla(250, 60%, 75%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(250, 60%, 70%, 1) 0%, hsla(250, 60%, 75%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(250, 60%, 70%, 1) 0%, hsla(250, 60%, 75%, 1) 100%);
+  background: linear-gradient(225deg, #779ECB 0%, #A2C2E2 100%);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
@@ -127,6 +124,7 @@ const ContactButton = styled.input`
     filter: brightness(1.1); /* Slightly increase brightness on hover */
   }
 `;
+
 
 
 

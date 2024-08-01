@@ -176,17 +176,14 @@ export const ResumeButton = styled.a`
     font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    background: hsla(270, 60%, 70%, 1); /* Darker pastel lavender */
-    background: linear-gradient(225deg, hsla(270, 60%, 70%, 1) 0%, hsla(270, 60%, 75%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(270, 60%, 70%, 1) 0%, hsla(270, 60%, 75%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(270, 60%, 70%, 1) 0%, hsla(270, 60%, 75%, 1) 100%);
-    box-shadow: 5px 5px 15px rgba(105, 89, 205, 0.3), /* Subtle lavender shadow */
-                -5px -5px 15px rgba(105, 89, 205, 0.3); /* Subtle lavender shadow */
+    background: linear-gradient(225deg, #779ECB 0%, #A2C2E2 100%);
+    box-shadow: 5px 5px 15px rgba(119, 158, 203, 0.3), /* Dark Pastel Blue shadow */
+                -5px -5px 15px rgba(119, 158, 203, 0.3); /* Dark Pastel Blue shadow */
     &:hover {
         transform: scale(1.05);
         transition: all 0.4s ease-in-out;
-        box-shadow: 5px 5px 10px rgba(105, 89, 205, 0.3), /* Subtle lavender shadow */
-                    -5px -5px 10px rgba(105, 89, 205, 0.3); /* Subtle lavender shadow */
+        box-shadow: 5px 5px 10px rgba(119, 158, 203, 0.3), /* Dark Pastel Blue shadow */
+                    -5px -5px 10px rgba(119, 158, 203, 0.3); /* Dark Pastel Blue shadow */
         filter: brightness(1.1); /* Slightly increase brightness on hover */
     }
     
