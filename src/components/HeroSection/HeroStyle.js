@@ -2,21 +2,16 @@ import styled from "styled-components";
 import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
-  @media (max-width: 960px) {
-    padding: 66px 16px;
-  }
-  @media (max-width: 640) {
-    padding: 32px 16px;
-  }
+  padding: 100px 30px;
+  margin: 0; /* Ensure no margin */
+  
   z-index: 1;
-
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
+
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -98,9 +93,18 @@ export const Img = styled.img`
   height: 100%;
   max-width: 400px;
   max-height: 400px;
-  border-radius: 60%;
+  border-radius: 50%;
+  border: 2px solid ${({ theme }) => theme.primary};
 
- 
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
 `;
 
 export const Title = styled.div`
@@ -172,10 +176,10 @@ export const ResumeButton = styled.a`
     font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    background: hsla(250, 60%, 70%, 1); /* Bluish lavender */
-    background: linear-gradient(225deg, hsla(250, 60%, 70%, 1) 0%, hsla(250, 60%, 75%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(250, 60%, 70%, 1) 0%, hsla(250, 60%, 75%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(250, 60%, 70%, 1) 0%, hsla(250, 60%, 75%, 1) 100%);
+    background: hsla(270, 60%, 70%, 1); /* Darker pastel lavender */
+    background: linear-gradient(225deg, hsla(270, 60%, 70%, 1) 0%, hsla(270, 60%, 75%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(270, 60%, 70%, 1) 0%, hsla(270, 60%, 75%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(270, 60%, 70%, 1) 0%, hsla(270, 60%, 75%, 1) 100%);
     box-shadow: 5px 5px 15px rgba(105, 89, 205, 0.3), /* Subtle lavender shadow */
                 -5px -5px 15px rgba(105, 89, 205, 0.3); /* Subtle lavender shadow */
     &:hover {

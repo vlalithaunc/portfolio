@@ -7,7 +7,7 @@ const Button = styled(Link)`
     display: block; /* Ensure the button is always visible */
     width: calc(100% - 20px); /* Adjust width to fit inside the card */
     padding: 10px;
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.card_light};
     color: ${({ theme }) => theme.text_black};
     font-size: 14px;
     font-weight: 700;
@@ -29,7 +29,7 @@ const Button = styled(Link)`
 const Card = styled.div`
     width: 330px;
     height: 490px;
-    background-color: ${({ theme }) => theme.card};
+    background-color: #efe3fd;
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);

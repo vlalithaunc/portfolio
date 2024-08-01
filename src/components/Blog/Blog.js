@@ -43,6 +43,22 @@ const blogPosts = [
         description: 'This is a description for the second blog post. It provides more details about the topic.',
         image: 'https://via.placeholder.com/300',
         tags: ['Styled Components', 'CSS']
+    },
+    {
+        id: '4',
+        title: 'Knowledge',
+        date: '2024-08-01',
+        description: 'This is a description for the second blog post. It provides more details about the topic.',
+        image: 'https://via.placeholder.com/300',
+        tags: ['Styled Components', 'CSS']
+    },
+    {
+        id: '4',
+        title: 'Knowledge',
+        date: '2024-08-01',
+        description: 'This is a description for the second blog post. It provides more details about the topic.',
+        image: 'https://via.placeholder.com/300',
+        tags: ['Styled Components', 'CSS']
     }
 
 

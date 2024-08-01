@@ -2,7 +2,7 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.div`
-    background-color: ${({ theme }) => theme.card_light};
+    background-color: white;
     height: 80px;
     display: flex;
     align-items: center;
@@ -11,11 +11,9 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
-    margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
-    @media (max-width: 960px) {
-        transition: 0.8s all ease;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding in the height */
 `;
 
 

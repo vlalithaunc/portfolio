@@ -43,7 +43,8 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/" element={
               <>
-                <HeroSection />
+              <Wrapper>
+                <HeroSection /></Wrapper>
                 <Wrapper>
                   <Skills />
                   <Experience />

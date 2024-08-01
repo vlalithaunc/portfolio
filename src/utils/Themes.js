@@ -13,12 +13,12 @@ export const darkTheme = {
 
 export const lightTheme = {
     bg: "#FFFFFF",          // Completely white background
-    bgLight: "#FFFFFF",     // Completely white for light background areas
-    primary: "#000000",     // Black for primary elements
+    bgLight: "#E6E6F0",     // Light lavender with a hint of blue
+    primary: "#4E5180",     // Black for primary elements
     text_primary: "#000000", // Black for primary text
-    text_secondary: "#000000", // Black for secondary text
-    card: "#FFFFFF",        // Completely white for cards
-    card_light: "#FFFFFF",  // Completely white for card backgrounds
+    text_secondary: "#4A4A4A", // Dark grey for secondary text
+    card: "#F2F2F9",        // Light lavender for cards
+    card_light: "#E6D8EB",  // Light lavender for card backgrounds
     button: "#000000",      // Black for buttons
     white: "#FFFFFF",       // White
     black: "#000000",       // Black
