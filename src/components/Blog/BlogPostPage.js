@@ -9,6 +9,8 @@ import knowledge from './knowledge.md'
 const blogPosts = [
   { id: '1', title: 'AI Overview', content: search },
   { id: '2', title: 'Knowledge Representation', content: knowledge },
+  { id: '3', title: 'Knowledge Representation', content: knowledge },
+  { id: '4', title: 'Knowledge Representation', content: knowledge },
 ];
 
 const Container = styled.div`

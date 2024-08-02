@@ -3,6 +3,8 @@ import BlogCard from '../Cards/BlogCard';
 import styled from 'styled-components';
 import Blog1Img from '../../images/blog-1.png';
 import Blog2Img from '../../images/blog-2.png';
+import Blog3Img from '../../images/blog-3.png';
+
 
 
 
@@ -33,11 +35,22 @@ const blogPosts = [
     },
     {
         id: '3',
-        title: 'Optimization',
-        date: '2024-08-01',
-        description: 'This is a description for the second blog post. It provides more details about the topic.',
-        image: 'https://via.placeholder.com/300',
-        tags: ['Styled Components', 'CSS']
+        title: 'Uncertainity',
+        date: '2024-06-29',
+        description: '',
+        image: Blog3Img,
+        tags: [
+            "Probability",
+            "Conditional Probability",
+            "Random Variables",
+            "Independence",
+            "Bayes’ Rule",
+            "Joint Probability",
+            "Bayesian Networks",
+            "Sampling",
+            "Markov Models",
+            "Hidden Markov Models"
+        ]
     },
 ];
 
