@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import Blog1Img from '../../images/blog-1.png';
 import Blog2Img from '../../images/blog-2.png';
 import Blog3Img from '../../images/blog-3.png';
-
-
+import Blog4Img from '../../images/blog-4.png';
+import Blog5Img from '../../images/blog-5.png';
+import Blog6Img from '../../images/blog-6.png';
+import Blog7Img from '../../images/blog-7.png';
 
 
 const BlogListContainer = styled.div`
@@ -37,21 +39,90 @@ const blogPosts = [
         id: '3',
         title: 'Uncertainity',
         date: '2024-06-29',
-        description: '',
+        description: 'Examining how uncertainty and partial knowledge influence optimal decision-making in AI.',
         image: Blog3Img,
         tags: [
-            "Probability",
             "Conditional Probability",
             "Random Variables",
             "Independence",
-            "Bayes’ Rule",
             "Joint Probability",
             "Bayesian Networks",
             "Sampling",
             "Markov Models",
-            "Hidden Markov Models"
         ]
     },
+    {
+        id: '4',
+        title: 'Optimization',
+        date: '2024-07-06',
+        description: 'Exploring how optimization techniques and algorithms enhance decision-making in AI.',
+        image: Blog4Img,
+        tags: [
+            "Local Search",
+            "Hill Climbing",
+            "Simulated Annealing",
+            "Linear Programming",
+            "Constraint Satisfaction",
+            "Backtracking Search"
+        ]
+    },
+    {
+        id: '5',
+        title: 'Learning',
+        date: '2024-07-13',
+        description: 'Investigating how machine learning and pattern recognition empower autonomous task execution in AI.',
+        image: Blog5Img,
+        tags: [
+            "Supervised/Unsupervised Learning",
+            "Nearest-Neighbor Classification",
+            "Perceptron Learning",
+            "SVM",
+            "Regression",
+            "Loss Functions",
+            "Regularization",
+            "Reinforcement",
+            "Q-Learning",
+            "k-means Clustering"
+        ]
+    },
+    {
+        id: '6',
+        title: 'Neural Networks',
+        date: '2024-07-20',
+        description: 'Exploring how neural networks and training algorithms enable predictive capabilities in AI.',
+        image: Blog6Img,
+        tags: [
+            "Artificial Neural Networks",
+            "Activation Functions",
+            "Gradient Descent",
+            "Backpropagation",
+            "Overfitting",
+            "TensorFlow",
+            "Image Convolution",
+            "Convolutional Neural Networks",
+            "Recurrent Neural Networks"
+        ]
+    },
+    {
+        id: '7',
+        title: 'Natural Language Processing',
+        date: '2024-07-27',
+        description: 'Understanding how Natural Language Processing prepares artificial intelligence to understand and generate human language efficiently.',
+        image: Blog7Img,
+        tags: [
+            "Syntax",
+            "Semantics",
+            "Context-Free Grammar",
+            "nltk",
+            "n-grams",
+            "Bag-of-Words Model",
+            "Naive Bayes",
+            "Word Representation",
+            "word2vec",
+            "Attention",
+            "Transformers"
+        ]
+    }
 ];
 
 const BlogList = () => {

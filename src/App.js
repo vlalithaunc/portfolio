@@ -20,7 +20,7 @@ const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
-  padding-top: 60px;  // Adjust based on your navbar height
+  padding-top: 20px; 
 `;
 
 const Wrapper = styled.div`
@@ -44,6 +44,13 @@ const Wrapper3 = styled.div`
   width: 100%;
 `;
 
+const Wrapper4 = styled.div`
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 100%), 
+  linear-gradient(38.73deg, rgba(204, 0, 187, 0.3) 0%, rgba(201, 32, 184, 0) 50%),
+  linear-gradient(141.27deg, rgba(0, 70, 209, 0.1) 50%, rgba(0, 70, 209, 0.3) 100%);
+  width: 100%;
+`;
+
 function App() {
   const [lightMode, setLightMode] = React.useState(true);
   const [openModal, setOpenModal] = React.useState({ state: false, project: null });
@@ -54,7 +61,7 @@ function App() {
         <Navbar />
         <Body>
           <Routes>
-            <Route path="/blog/:id" element={<BlogPostPage />} />
+            <Route path="/blog/:id" element={<Wrapper4><BlogPostPage /></Wrapper4>} />
             <Route path="/blog" element={<><Wrapper3><Blog /><Footer /></Wrapper3></>} />
             <Route path="/" element={
               <>

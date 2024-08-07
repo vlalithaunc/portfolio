@@ -1,6 +1,14 @@
 import project_1 from '../images/project-1.png'
 import project_2 from '../images/project-2.png'
 import project_3 from '../images/project-3.png'
+import project_4 from '../images/project-4.png'
+import project_5 from '../images/project-5.png'
+import project_6 from '../images/project-6.png'
+import project_7 from '../images/project-7.png'
+import project_8 from '../images/project-8.png'
+
+import covidProject from '../images/Final_Report.pdf'
+
 import resume from '../images/resume-example.pdf'
 
 
@@ -14,7 +22,7 @@ export const Bio = {
       "AI Engineer"
     ],
     description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+      "I’m a motivated tech enthusiast, always excited to take up new challenges. With a love for learning and a commitment to delivering high-quality work, I’m ready to bring my skills and positive attitude to make a real impact. Let’s connect and create something amazing together!",
     github: "https://github.com/vlalithaunc",
     resume:
       resume,
@@ -76,7 +84,7 @@ export const Bio = {
         },
         {
           name: "Node Js",
-          image: "https://nodejs.org/static/images/logo.svg",
+          image: "https://miro.medium.com/v2/resize:fit:800/1*v2vdfKqD4MtmTSgNP0o5cg.png",
         },
         {
           name: "Express Js",
@@ -98,9 +106,9 @@ export const Bio = {
       skills: [
         
         {
-          name: "Kotlin",
+          name: "R",
           image:
-            "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+            "https://images.sftcdn.net/images/t_app-icon-m/p/aa6d41ae-56eb-4438-9625-961714095b4a/1631223744/rstudio-server-RStudio%20Desktop-icn.png",
         },
       ],
     },
@@ -142,10 +150,18 @@ export const Bio = {
             "https://partner.zoom.us/wp-content/uploads/2022/12/2022_Zoom-AWS_Lockup_RGB-1-e1672857797889-1024x760.png",
         },
         {
-          name: "Microsoft Excel",
+          name: "Microsoft Office Specialist: Word",
           image:
-            "https://i.pinimg.com/736x/d3/d5/81/d3d581d91037cbcec254dbd8c4ea558a.jpg",
-        },
+            "https://images.credly.com/size/680x680/images/16bc9e00-43a7-421c-a775-a990fbc590ac/MOS_Word.png",
+        },{
+          name: "Microsoft Office Specialist: PowerPoint",
+          image:
+            "https://images.credly.com/size/680x680/images/b4fbd3ac-b964-4eaf-ac28-a286964ec49e/MOS_PowerPoint.png",
+        },{
+          name: "Microsoft Office Specialist: Excel",
+          image:
+            "https://images.credly.com/size/680x680/images/d0790dc7-5127-4262-a492-1b60030b0114/MOS_Excel.png",
+        }
       ],
     },
   ];
@@ -210,7 +226,7 @@ export const Bio = {
   
   export const projects = [
     {
-      id: 9,
+      id: 0,
       title: "UNC CSXL Roster Management",
       date: "Jan 2024 - May 2024",
       description:
@@ -232,7 +248,7 @@ export const Bio = {
       webapp: "https://csxl-team-a3-comp590-24s.apps.unc.edu",
     },
     {
-      id: 0,
+      id: 1,
       title: "Track My Leader",
       date: "Apr 2023 - May 2023",
       description:
@@ -245,7 +261,7 @@ export const Bio = {
       webapp: 'https://devpost.com/software/track-my-leader',
     },
     {
-      id: 1,
+      id: 2,
       title: "Translate Me",
       date: "Oct 2022 - Present",
       description:
@@ -261,8 +277,86 @@ export const Bio = {
       category: "web app",
       github: "https://github.com/DheyaM/PearlHacks2022/",
       webapp: "https://devpost.com/software/translate-me-u9pv13",
+    },{
+      id: 3,
+      title: "Tic-Tac-Toe",
+      date: "Jun 2024 - Jul 2024",
+      description:
+        "Implented an optimal Tic-Tac-Toe AI using the Minimax algorithm to enhance gameplay strategy.",
+      image:
+        project_4,
+      tags: [
+        "Python",
+        "Pygame",
+        "MinMax Algorithm",
+      ],
+      category: "artificial intelligence",
+      github: "https://github.com/vlalithaunc/ai-course/tree/main/tictactoe",
     },
+    {
+      id: 4,
+      title: "Minesweeper",
+      date: "Jun 2024 - Jul 2024",
+      description:
+        "Developed a Minesweeper game with logic for mine detection and flagging, incorporating a 3x3 grid to reveal cell values based on neighboring mines.",
+      image:
+        project_5,
+      tags: [
+        "Python",
+        "Pygame",
+      ],
+      category: "artificial intelligence",
+      github: "https://github.com/vlalithaunc/ai-course/tree/main/minesweeper",
+    },{
+      id: 5,
+      title: "Crossword",
+      date: "Jun 2024 - Jul 2024",
+      description:
+        "Developed an AI algorithm to generate engaging and challenging crossword puzzles.",
+      image:
+        project_6,
+      tags: [
+        "Python",
+        "Backtracking Algorithm",
+      ],
+      category: "artificial intelligence",
+      github: "https://github.com/vlalithaunc/ai-course/tree/main/crossword",
+    },{
+      id: 6,
+      title: "Traffic Sign Detection",
+      date: "Jun 2024 - Jul 2024",
+      description:
+        "Designed and implemented a neural network using TensorFlow to classify road signs from images, leveraging a labeled dataset for accurate sign recognition.",
+      image:
+      project_7,
+      tags: [
+        "Python",
+        "Tensorflow",
+        "sklearn.model_selection",
+        "cv2",
+      ],
+      category: "artificial intelligence",
+      github: "https://github.com/vlalithaunc/ai-course/tree/main/traffic",
+  },{
+  id: 7,
+  title: "Covid Deaths with Pre-Existing Health Conditions",
+  date: "Jan - Feb 2022",
+  description:
+    "Analyzed COVID-19 fatalities in individuals with pre-existing conditions using R, applying data analytics and machine learning techniques..",
+  image:
+  project_8,
+  tags: [
+    "R",
+    "tidyverse",
+    "ggplot",
+    "corrplot",
+  ],
+  category: "artificial intelligence",
+  webapp: covidProject
+},
   ];
+
+
   
   export const TimeLineData = [
     { year: 2017, text: "Started my journey" },

@@ -13,7 +13,7 @@ const Projects = ({openModal,setOpenModal}) => {
         <Title>Projects</Title>
         <Desc>
           Over the past few years, I have gotten the opportunity to work on a wide range of projects. Here are some of my projects.<br />
-          <b>Click on an Individual Project to 'View Code' or 'Live Demo'</b>
+          <b>Click on an Individual Project to 'View Code' or 'View App'</b>
         </Desc>
         <ToggleButtonGroup >
           {toggle === 'all' ?
@@ -28,10 +28,10 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
           }
           <Divider />
-          {toggle === 'machine learning' ?
-            <ToggleButton active value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
+          {toggle === 'artificial intelligence' ?
+            <ToggleButton active value="artificial intelligence" onClick={() => setToggle('artificial intelligence')}>ARTIFICIAL INTELLIGENCE</ToggleButton>
             :
-            <ToggleButton value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
+            <ToggleButton value="artificial intelligence" onClick={() => setToggle('artificial intelligence')}>ARTIFICIAL INTELLIGENCE</ToggleButton>
           }
         </ToggleButtonGroup>
         <CardContainer>

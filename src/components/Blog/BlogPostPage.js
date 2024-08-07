@@ -2,15 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import Markdown from 'markdown-to-jsx';
-import search from './search.md'
-import knowledge from './knowledge.md'
+import search from './search.md';
+import knowledge from './knowledge.md';
+import uncertainity from './uncertainity.md';
+import optimization from './optimization.md';
+import learning from './learning.md';
+import neural_networks from './neural_networks.md';
+import nlp from './nlp.md';
+
 
 
 const blogPosts = [
-  { id: '1', title: 'AI Overview', content: search },
-  { id: '2', title: 'Knowledge Representation', content: knowledge },
-  { id: '3', title: 'Knowledge Representation', content: knowledge },
-  { id: '4', title: 'Knowledge Representation', content: knowledge },
+  { id: '1', title: 'Dive into AI', content: search },
+  { id: '2', title: 'Knowledge Representation in AI', content: knowledge },
+  { id: '3', title: 'Uncertainity', content: uncertainity },
+  { id: '4', title: 'Optimization', content: optimization },
+  { id: '5', title: 'Learning', content: learning },
+  { id: '6', title: 'Neural Networks', content: neural_networks },
+  { id: '7', title: 'Natural Language Processing', content: nlp },
 ];
 
 const Container = styled.div`
@@ -19,11 +28,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: linear-gradient(225deg, #800080 0%, #ff66b2 100%);;
   color: ${({ theme }) => theme.text};
-  @media (max-width: 960px) {
-    padding: 10px;
-  }
+  min-height: 100vh;
+  width: 100%;
 `;
 
 const Wrapper = styled.div`
@@ -33,7 +41,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1200px;
   padding: 20px;
-  background-color: ${({ theme }) => theme.card};
+  background-color: #E3E8F4;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin-top: 20px;
@@ -59,8 +67,39 @@ const Content = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
   }
-`;
 
+  p {
+    margin: 20px 0;
+  }
+
+  h2 {
+    color: #333;
+    margin-top: 40px;
+  }
+
+  ul {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  
+`;
 
 const BlogPostPage = () => {
   const { id } = useParams();
